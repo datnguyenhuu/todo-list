@@ -1,0 +1,100 @@
+*
+{
+	box-sizing: border-box;
+	font-family: "Times New Roman", serif;
+}
+
+.header
+{
+	background-color: red;
+	text-align: center;
+	padding: 10px;
+}
+
+.header h1
+{
+	color: #fff;
+}
+
+.create
+{
+	position: relative;
+}
+
+.create input
+{
+	font-size: 17px;
+	padding: 10px 10px;
+	margin-bottom: 10px;
+	width: 70%;
+	border: none;
+}
+
+.create button
+{
+	font-size: 16px;
+	padding: 11px;
+	width: 25%;
+	border: none;
+	background-color: #eee;
+}
+
+.main ul
+{
+	padding-left: 0px;
+	margin: 0px;
+}
+
+.main ul li
+{
+	list-style:  none;
+	font-size: 16px;
+	background-color: #f9f9f9;
+	padding: 10px 10px 10px 40px;
+	font-size: 20px;
+	position: relative;
+}
+
+
+.main ul li:hover
+{
+	background-color: #eee;
+	cursor:	pointer;
+	color: orange;
+}
+
+.main ul li .close
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px 15px;
+}
+
+.main ul li.completed
+{
+	color: #fff;
+	text-decoration: line-through;
+	background-color: #555;
+}
+
+.main ul li.completed:before
+{
+	content: '';
+	position: absolute;
+	left: 0;
+	padding: 10px 15px;
+	background: url("./tick.png") no-repeat;
+}
+
+.main ul li:hover .close
+{
+	color: black;
+	background-color: orange;
+
+}
+
+.main ul li .close
+{
+	float: right;
+}
